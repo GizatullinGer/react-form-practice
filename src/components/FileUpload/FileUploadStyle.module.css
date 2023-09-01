@@ -1,0 +1,61 @@
+/* CustomFileUpload.css */
+.custom__file__upload {
+	margin: 0 0 20px 0;
+	max-width: 100%;
+}
+
+/* Скрыть стандартный input[type="file"] */
+input[type='file'] {
+	display: none;
+}
+
+.form__file {
+	width: 100%;
+	color: #ffffff;
+}
+
+.form__file h3 {
+	margin: 0 0 20px 0;
+}
+
+.form__fileList {
+	width: 100%;
+}
+
+.form__fileField {
+	display: inline-block;
+	padding: 15px;
+	text-align: center;
+	border: 1px dashed #ffffff;
+}
+
+.form__fileImages {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -5px;
+}
+
+.form__fileImage {
+	padding: 0 5px;
+	margin: 0 0 10px 0;
+	flex: 0 0 33.333%;
+	display: flex;
+}
+
+.form__fileImage img {
+	border: 1px solid #fad000;
+	border-radius: 5px;
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.rhkstyle img {
+	border: 1px solid #ec5990;
+}
+
+.form__fileDel {
+	color: red;
+	font-weight: 700;
+	cursor: pointer;
+}

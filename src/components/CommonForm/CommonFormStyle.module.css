@@ -1,0 +1,10 @@
+* {
+	box-sizing: border-box;
+}
+
+.common {
+	max-width: 33.333%;
+	border: 5px solid #fad000;
+	border-radius: 15px;
+	margin: 0 auto;
+}

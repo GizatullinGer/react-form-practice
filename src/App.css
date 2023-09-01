@@ -1,38 +1,96 @@
 .App {
-  text-align: center;
+	background-color: #282c34;
+	min-height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.commonForm,
+.rhkform {
+	padding: 60px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Общие стили формы */
+
+.inner {
+	padding: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form {
 }
 
-.App-link {
-  color: #61dafb;
+.form__container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form__container input,
+.form__container textarea {
+	width: 100%;
+	outline: none;
+
+	font-size: 16px;
+	line-height: 110%;
+	color: #000;
+
+	border-radius: 3px;
+	border: 1px solid #fad000;
+	padding: 5px 10px;
+	margin: 0 0 20px 0;
+}
+
+.rhkstyles input,
+.rhkstyles textarea {
+	border: 1px solid #ec5990;
+}
+
+.radiobtns {
+	margin: 0 0 20px 0;
+}
+
+.select__section {
+	width: 100%;
+	margin: 0 0 20px 0;
+}
+
+.submit__btn button {
+	font-size: 16px;
+	line-height: 120%;
+	background-color: transparent;
+	border: 3px solid #fad000;
+	border-radius: 5px;
+	padding: 5px 10px;
+	color: #fff;
+	cursor: pointer;
+}
+
+/*  */
+
+.submit__btn button:hover {
+	background-color: #fad000;
+	color: #000;
+}
+
+.rhk {
+	max-width: 33.333%;
+	border: 5px solid #ec5990;
+	border-radius: 15px;
+	margin: 0 auto;
+}
+
+.btn-rhk button {
+	border: 3px solid #ec5990;
+}
+
+.btn-rhk button:hover {
+	background-color: #ec5990;
+	color: #000;
+}
+
+.input__container {
+	width: 100%;
+	margin: 0 0 20px 0;
+}
+.input__container > input {
+	margin: 0 0 10px 0;
 }

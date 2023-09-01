@@ -1,0 +1,40 @@
+.custom__select {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+}
+
+.select__selected {
+	background-color: #eee;
+	padding: 8px;
+	border: 1px solid #ccc;
+	cursor: pointer;
+}
+
+.select__items {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	max-height: 200px;
+	overflow-y: auto;
+	border: 1px solid #ccc;
+	z-index: 9999;
+	width: 100%; /* Растягиваем ширину на 100% */
+}
+
+.select__items.open {
+	display: block;
+}
+
+.select__option {
+	padding: 8px 12px;
+	cursor: pointer;
+}
+
+.select__option:hover {
+	background-color: #fad000;
+}
+
+.rhkstyles:hover {
+	background-color: #ec5990;
+}

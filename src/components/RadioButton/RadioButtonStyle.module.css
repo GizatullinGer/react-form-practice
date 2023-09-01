@@ -1,0 +1,45 @@
+/* CustomRadio.css */
+.custom__radio {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.radio {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	width: 20px;
+	height: 20px;
+	border: 2px solid #fad000;
+	border-radius: 50%;
+	margin-right: 8px;
+}
+
+.rhkstyle {
+	border: 2px solid #ec5990;
+}
+
+input[type='radio'] {
+	opacity: 0; /* Скрываем стандартный radio input */
+	position: absolute;
+	left: -9999px; /* Убираем окончательно, чтобы не прыгала страница */
+	visibility: hidden;
+}
+
+input[type='radio']:checked + .radio:after {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #fad000;
+}
+
+input[type='radio']:checked + .radio:after {
+	background-color: #ec5990;
+}

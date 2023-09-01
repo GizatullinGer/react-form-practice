@@ -1,0 +1,58 @@
+/* Стили для контейнера кастомного чекбокса */
+.checkbox {
+	display: inline-block;
+	position: relative;
+	padding-left: 30px;
+	margin: 0 0 20px 0;
+	cursor: pointer;
+	font-size: 16px;
+	color: #ffffff;
+}
+
+/* Стили для кастомного чекбокса */
+.checkbox input[type='checkbox'] {
+	opacity: 0; /* Скрыть оригинальный чекбокс */
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* Стили для отображения кастомного чекбокса */
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	border: 2px solid #333;
+	background-color: #fff;
+}
+
+/* Стили для отображения кастомного чекбокса при его активации */
+.checkbox input[type='checkbox']:checked + .checkmark {
+	background-color: #fad000;
+}
+
+.checkbox input[type='checkbox']:checked + .rhkstyle {
+	background-color: #ec5990;
+}
+
+/* Стили для отображения галочки внутри кастомного чекбокса */
+.checkmark::after {
+	content: '\2713'; /* Знак "галочки" */
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	font-size: 16px;
+	color: #fff;
+}
+
+/* Стили для отображения галочки при активации кастомного чекбокса */
+.checkbox input[type='checkbox']:checked + .checkmark::after {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
